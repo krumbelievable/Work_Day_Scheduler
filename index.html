@@ -18,21 +18,110 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- CSS sheet always come at the beginning-->
+    <link rel="stylesheet" href="./assets/style.css" /> 
     <title>Work Day Scheduler</title>
   </head>
 
+  <!-- Bootstrap used as a content library.-->
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <!-- Shows current day -->
+      <p id="currentDay" class="lead"></p>  
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
+      <div id="9am" class="row time-block">   
+        <!-- Row calls in the Boostrap Grid. IDs are for future javascript. -->
+        <div class="col-md-1 hour">
+        9:00 am
+        </div>
+        <textarea class="description col-md-10"></textarea> 
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="10am" class="row time-block">
+        <div class="col-md-1 p-0 hour">
+        10:00 am
+        </div>
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="11am" class="row time-block">
+
+      <div class="col-md-1 hour p-0">
+        11:00 am
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1 p-0"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="12pm" class="row time-block">
+
+      <div class="col-md-1 hour p-0">
+        12:00 pm
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="1pm" class="row time-block">
+
+      <div class="col-md-1 hour">
+        1:00 pm
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="2pm" class="row time-block">
+      <div class="col-md-1 hour">
+        2:00 pm
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="3pm" class="row time-block">
+      <div class="col-md-1 hour">
+        3:00 pm
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1" ><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="4pm" class="row time-block">
+      <div class="col-md-1 hour">
+        4:00 pm
+        </div>
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="5pm" class="row time-block">
+      <div class="col-md-1 hour">
+        5:00 pm
+        </div>
+
+        <textarea class="description col-md-10"></textarea>
+        <button class="saveBtn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+    <!-- Other script calls go before ours so ours stays untouched -->
+    <script src="./assets/script.js"></script>
+    
   </body>
 </html>
