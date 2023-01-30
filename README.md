@@ -40,3 +40,4 @@ SO THAT I can manage my time effectively
 # Link
 
 https://github.com/krumbelievable/Work_Day_Scheduler
+https://krumbelievable.github.io/Work_Day_Scheduler
